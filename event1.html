@@ -14,10 +14,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bree Serif">
-
         
         <style>
             *{font-family: 'Bree Serif';}
+            
             .register{
                 margin: 50px;
                 position: relative;
@@ -35,11 +35,55 @@
             }
             
             .nav a{
-                margin: 0px 30px;
+                margin: 0px 20px;
                 font-size: 20px;
                 color: rgb(95, 0, 142);
             }
             
+            .navbar-default{
+                background-color: white;
+                border: none;
+            }
+            
+            .poster{
+                margin: 20px; border: 1px solid; width: 70%; height: 500px; animation-duration: 0.5s
+                
+            }
+            
+            @media only screen and (max-width: 768px){
+                .details{
+                    width: 100%;
+                }
+                
+                .navbar-default{
+                    background-color: #F8F8F8 ;
+                    border: 1px solid #DDDDDD;
+                    border-radius: 5px;
+                }
+                
+                #navcontent{
+                }
+                
+                .nav li a{
+                    border: 1px solid #DDDDDD;  
+                    border-radius: 5px;
+                    padding: 10px 50px;
+                    
+                }
+                
+                .nav li{                   
+
+                    margin: 0px 8%;
+                    width: 80%;
+                }
+                
+                .poster{
+                    width: 110%;
+                    position: relative;
+                    left: -35px;
+                    height: 350px;
+                }
+            }            
             p{
                 text-align: left;
                 padding: 30px;
@@ -59,23 +103,44 @@
 
                         <button class="register wow rotateInDownRight hvr-underline-from-center" style="display: inline-block;  animation-duration: 0.5s">Register</button>
                     </div>
+                    
+                    
                                         
                     <div class="details">
-                        <ul class="nav nav-tabs wow fadeInUp" style="animation-duration: 0.5s">
-                            <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-                            <li><a href="#menu1" data-toggle="tab">Description</a></li>
-                            <li><a href="#menu2" data-toggle="tab">Rules</a>
-                            <li><a href="#menu3" data-toggle="tab">Judging Criteria</a>
-                            <li><a href="#menu4" data-toggle="tab">Event Details</a></li>
-                            <li><a href="#menu5" data-toggle="tab">Co-ordinator's Details</a></li>
-            
-                        </ul>
+                        <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button class="navbar-toggle" data-toggle="collapse" data-target="#navcontent">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="navcontent">
+                                <ul class="nav nav-tabs wow fadeInUp" style="animation-duration: 0.5s">
+                                    <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                                    <li><a href="#menu1" data-toggle="tab">Description</a></li>
+                                    <li><a href="#menu2" data-toggle="tab">Rules</a>
+                                    <li><a href="#menu3" data-toggle="tab">Judging Criteria</a>
+                                    <li><a href="#menu4" data-toggle="tab">Event Details</a></li>
+                                    <li><a href="#menu5" data-toggle="tab">Co-ordinator's Details</a></li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+                    </nav>
+                        
+                        
                         
                     </div>
                     
                     <div class="tab-content">
                         <div id="home" class="tab-pane fade in active">
-                            <div class="wow zoomIn" style="margin: 20px; border: 1px solid; width: 70%; height: 500px; animation-duration: 0.5s">
+                            <div class="poster wow zoomIn" style="">
                                 <h1>Event Poster</h1>
                             
                             </div>
