@@ -1,0 +1,10 @@
+{
+    
+    "name":"Event_Name",
+    "description":"This is the description for the event.",
+    "rules":"These are the rules to be followed in the event.",
+    "judging":"These are the judging criteria for the event.",
+    "edetails":"These are the details of the event",
+    "cdetails":"These are the details of the co-ordinators"
+    
+}
